@@ -20,7 +20,7 @@ const Login = () => {
 
             // Giriş başarılı, kullanıcı bilgilerini işleyin
             console.log('Giriş başarılı:', response.data);
-            window.location.href = 'https://grez-shop.vercel.app';
+            
         } catch (err) {
             setError('Giriş başarısız: ' + (err.response?.data?.message || 'Bir hata oluştu'));
         }
