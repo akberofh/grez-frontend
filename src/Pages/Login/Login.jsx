@@ -11,7 +11,7 @@ const Login = () => {
         setError(''); // Önceki hatayı temizle
 
         try {
-            const response = await axios.post('https://grez-shop.vercel.app/api/users', {
+            const response = await axios.post('https://grez-shop.vercel.app/api/users/auth', {
                 email,
                 password,
             }, {
